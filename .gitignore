@@ -1,0 +1,17 @@
+# uv / Python
+.venv/
+__pycache__/
+*.py[cod]
+.python-version
+
+# DVC cache (large, managed by DVC itself)
+.dvc/cache/
+.dvc/tmp/
+
+# DVC-generated outputs (tracked by DVC, not git)
+data/clean/
+data/transformed/
+data/features/
+
+# Marimo cache
+__marimo__/
