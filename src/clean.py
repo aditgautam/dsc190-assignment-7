@@ -10,6 +10,7 @@ df = df.dropna()
 df = df[df["event_type"].isin(VALID_EVENT_TYPES)]
 
 df = df[df["duration_seconds"] > 0]
+df["duration_seconds"] = df["duration_seconds"].astype(int)
 
 df["timestamp"] = pd.to_datetime(df["timestamp"], format="mixed").dt.strftime("%Y-%m-%dT%H:%M:%S")
 
