@@ -15,3 +15,10 @@ data/features/
 
 # Marimo cache
 __marimo__/
+
+repo_url.txt
+
+# Claude
+.claude/
+*.claude.json
+logs/
